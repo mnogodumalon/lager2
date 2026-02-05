@@ -1,0 +1,38 @@
+[
+  {
+    "debug": "Calling MCP tool: create_apps",
+    "timestamp": "2026-02-05T13:32:59.489Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  },
+  {
+    "debug": "Tool 'create_apps' completed successfully in 1s",
+    "timestamp": "2026-02-05T13:33:01.445Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  },
+  {
+    "debug": "Calling MCP tool: generate_typescript",
+    "timestamp": "2026-02-05T13:33:09.044Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  },
+  {
+    "debug": "Tool 'generate_typescript' completed successfully in 16ms",
+    "timestamp": "2026-02-05T13:33:09.061Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  },
+  {
+    "debug": "Calling MCP tool: deploy_to_github",
+    "timestamp": "2026-02-05T13:35:24.256Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  },
+  {
+    "debug": "Tool 'deploy_to_github' completed successfully in 7s",
+    "timestamp": "2026-02-05T13:35:31.746Z",
+    "sessionId": "f586ea5e-63e7-4adb-810a-83d91bc484ec",
+    "cwd": "/home/user/app"
+  }
+]

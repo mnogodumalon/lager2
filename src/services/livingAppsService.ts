@@ -1,6 +1,6 @@
 // AUTOMATICALLY GENERATED SERVICE
 import { APP_IDS } from '@/types/app';
-import type { InventoryItems } from '@/types/app';
+import type { InventoryItems, Categories, Locations } from '@/types/app';
 
 // Base Configuration
 const API_BASE_URL = 'https://my.living-apps.de/rest';
@@ -50,6 +50,48 @@ export class LivingAppsService {
   }
   static async deleteInventoryItem(id: string) {
     return callApi('DELETE', `/apps/${APP_IDS.INVENTORY_ITEMS}/records/${id}`);
+  }
+
+  // --- CATEGORIES ---
+  static async getCategories(): Promise<Categories[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.CATEGORIES}/records`);
+    return Object.entries(data).map(([id, rec]: [string, any]) => ({
+      record_id: id, ...rec
+    }));
+  }
+  static async getCategorie(id: string): Promise<Categories | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.CATEGORIES}/records/${id}`);
+    return { record_id: data.id, ...data };
+  }
+  static async createCategorie(fields: Categories['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.CATEGORIES}/records`, { fields });
+  }
+  static async updateCategorie(id: string, fields: Partial<Categories['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.CATEGORIES}/records/${id}`, { fields });
+  }
+  static async deleteCategorie(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.CATEGORIES}/records/${id}`);
+  }
+
+  // --- LOCATIONS ---
+  static async getLocations(): Promise<Locations[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.LOCATIONS}/records`);
+    return Object.entries(data).map(([id, rec]: [string, any]) => ({
+      record_id: id, ...rec
+    }));
+  }
+  static async getLocation(id: string): Promise<Locations | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.LOCATIONS}/records/${id}`);
+    return { record_id: data.id, ...data };
+  }
+  static async createLocation(fields: Locations['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.LOCATIONS}/records`, { fields });
+  }
+  static async updateLocation(id: string, fields: Partial<Locations['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.LOCATIONS}/records/${id}`, { fields });
+  }
+  static async deleteLocation(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.LOCATIONS}/records/${id}`);
   }
 
 }
