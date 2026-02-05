@@ -1,0 +1,130 @@
+{
+  "appgroup_id": null,
+  "appgroup_name": "Auto-Generated",
+  "apps": {
+    "inventory_items": {
+      "app_id": "698494eea42675c0592289b9",
+      "name": "Lagerartikel",
+      "controls": {
+        "name": {
+          "identifier": "name",
+          "label": "Artikelname",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "sku": {
+          "identifier": "sku",
+          "label": "SKU",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "category": {
+          "identifier": "category",
+          "label": "Kategorie",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`).\n\nThe available options are defined in the `lookup_data` attribute of this control's LivingApp.\n\nThe field value will be the key in this `lookup_data` attribute or `null`.",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_data": {
+            "electronics": "Elektronik",
+            "furniture": "M\u00f6bel",
+            "office": "B\u00fcrobedarf"
+          }
+        },
+        "quantity": {
+          "identifier": "quantity",
+          "label": "Menge",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "precision": null
+        },
+        "min_quantity": {
+          "identifier": "min_quantity",
+          "label": "Mindestbestand",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`).",
+          "required": true,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true,
+          "precision": null
+        },
+        "unit_price": {
+          "identifier": "unit_price",
+          "label": "St\u00fcckpreis (\u20ac)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "precision": null
+        },
+        "location": {
+          "identifier": "location",
+          "label": "Lagerort",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`).",
+          "required": true,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Lagerartikel"
+    ]
+  }
+}
