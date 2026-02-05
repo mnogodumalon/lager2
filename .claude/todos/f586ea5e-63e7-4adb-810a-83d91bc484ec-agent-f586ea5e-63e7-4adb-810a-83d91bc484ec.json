@@ -1,17 +1,1 @@
-[
-  {
-    "content": "Create LivingApps for categories and locations",
-    "status": "completed",
-    "activeForm": "Creating LivingApps for categories and locations"
-  },
-  {
-    "content": "Update Dashboard to manage categories and locations",
-    "status": "completed",
-    "activeForm": "Updating Dashboard to manage categories and locations"
-  },
-  {
-    "content": "Build and deploy",
-    "status": "in_progress",
-    "activeForm": "Building and deploying"
-  }
-]
+[]
